@@ -1,0 +1,28 @@
+
+//COLORS:
+
+$color-beige: #fff3f8;
+$color-turquoise: #046170;
+$color-turquoise-dark: #044554;
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+}
+
+body {
+  background-color: $color-beige;
+  font-family: Verdana, Geneva, sans-serif;
+  color: black;
+  font-weight: 400;
+  line-height: 1.3125;
+  font-size: 15px;
+}

@@ -1,0 +1,44 @@
+.header {
+  display:grid;
+  height: 90vh;
+  grid-template-columns: 2fr 1fr;
+
+  &-name {
+    display: grid;
+    grid-column-start: 1/2;
+    text-align: center;
+
+    &-title {
+      display: grid;
+      align-items: end;
+
+      color: $color-turquoise;
+      font-size: 4.5rem;
+      font-weight: lighter;
+      letter-spacing: 15px;
+
+      animation-name: moveInRight;
+      animation-duration: 3s;
+      animation-delay: 1s;
+      animation-fill-mode: backwards;
+    }
+
+    &-subtitle {
+      display:grid;
+      align-items: start;
+
+      color: $color-turquoise-dark;
+      font-size: 4rem;
+      font-weight: lighter;
+      letter-spacing: 15px;
+
+      animation-name: moveInLeft;
+      animation-duration: 3s;
+      animation-delay: 1s;
+      animation-fill-mode: backwards;
+    }
+  }
+  &-shape {
+    grid-column-start: 2/-1;
+  }
+}
