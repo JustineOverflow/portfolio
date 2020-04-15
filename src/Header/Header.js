@@ -9,7 +9,7 @@ class Header extends React.Component {
                 </div>
                 <div className="header-intro">
                     <h1 className="header-intro-title"> Justine Fabre</h1>
-                    <h1 className="header-intro-subtitle"><b>{'</ '}</b>Full Stack Developer<b>{'>'}</b></h1>
+                    <h1 className="header-intro-subtitle"><b>{'< '}</b>Full Stack Developer<b>{'/>'}</b></h1>
 
                     <svg className="header-icon" xmlns="http://www.w3.org/2000/svg" width="64" height="64"
                          viewBox="0 0 640 640"
