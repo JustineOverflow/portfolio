@@ -1,20 +1,48 @@
+.wave-container {
+  width: 100%;
+  height: 100vh;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 5px;
+  background-image: linear-gradient(to top, $color-orange 0%, $color-rose 60%);
+  overflow: hidden;
+  z-index: 1;
+}
+.wave {
+  width: 1200px;
+  height: 1000px;
+  position: absolute;
+  top: -20%;
+  left: 40%;
+  margin-left: -500px;
+  margin-top: -500px;
+  border-radius: 35%;
+  background: $color-beige-transparent;
+  animation: wave 15s infinite linear;
+  z-index: 2;
+}
+
 .header {
   display:grid;
-  height: 90vh;
+  height: 80vh;
   grid-template-columns: 2fr 1fr;
+  z-index: 10;
 
-  &-name {
+  &-intro {
     display: grid;
     grid-column-start: 1/2;
     text-align: center;
+    z-index: 10;
 
     &-title {
       display: grid;
       align-items: end;
 
-      color: $color-turquoise;
-      font-size: 4.5rem;
-      font-weight: lighter;
+      color: $color-turquoise-dark;
+      font-size: 6rem;
+      font-weight: 200;
       letter-spacing: 15px;
 
       animation-name: moveInRight;
@@ -24,13 +52,14 @@
     }
 
     &-subtitle {
+      margin-top: 5rem;
       display:grid;
       align-items: start;
 
       color: $color-turquoise-dark;
-      font-size: 4rem;
+      font-size: 2.5rem;
       font-weight: lighter;
-      letter-spacing: 15px;
+      letter-spacing: 10px;
 
       animation-name: moveInLeft;
       animation-duration: 3s;
@@ -38,6 +67,15 @@
       animation-fill-mode: backwards;
     }
   }
+
+  &-icon {
+    display: grid;
+    justify-self: center;
+    align-self: end;
+    width: 4rem;
+    fill: $color-orange-dark;
+  }
+
   &-shape {
     grid-column-start: 2/-1;
   }

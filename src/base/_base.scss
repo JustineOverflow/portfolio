@@ -1,9 +1,16 @@
 
 //COLORS:
 
-$color-beige: #fff3f8;
+$color-beige: rgb(255, 238, 247);
+$color-beige-transparent: rgba(255, 238, 247, 0.86);
 $color-turquoise: #046170;
-$color-turquoise-dark: #044554;
+$color-turquoise-dark: #064b4d;
+
+$color-rose: rgba(255, 223, 213, 0.86);
+$color-orange: rgba(255, 204, 94, 0.83);
+$color-orange-dark: rgb(255, 170, 57);
+
+
 
 *,
 *::before,
@@ -20,7 +27,7 @@ html {
 
 body {
   background-color: $color-beige;
-  font-family: Verdana, Geneva, sans-serif;
+  font-family: system-ui, sans-serif;
   color: black;
   font-weight: 400;
   line-height: 1.3125;
