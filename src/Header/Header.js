@@ -7,9 +7,15 @@ class Header extends React.Component {
                 <div className="wave-container">
                     <div className="wave"></div>
                 </div>
+                <nav className="header-nav">
+                    <button className="header-nav-li">Hire me</button>
+                    <button className="header-nav-li">My journey</button>
+                    <button className="header-nav-li">My code</button>
+                </nav>
                 <div className="header-intro">
                     <h1 className="header-intro-title"> Justine Fabre</h1>
-                    <h1 className="header-intro-subtitle"><b>{'< '}</b>Full Stack Developer<b>{'/>'}</b></h1>
+                    <p className="header-intro-headline">Tech journey</p>
+                    <h1 className="header-intro-subtitle"><b>{'< '}</b>Full Stack Developer<b>{' />'}</b></h1>
 
                     <svg className="header-icon" xmlns="http://www.w3.org/2000/svg" width="64" height="64"
                          viewBox="0 0 640 640"

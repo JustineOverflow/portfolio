@@ -10,6 +10,7 @@
   overflow: hidden;
   z-index: 1;
 }
+
 .wave {
   width: 1200px;
   height: 1000px;
@@ -25,24 +26,50 @@
 }
 
 .header {
-  display:grid;
+  display: grid;
   height: 80vh;
-  grid-template-columns: 2fr 1fr;
   z-index: 10;
+
+  &-nav {
+    list-style: none;
+    text-align: center;
+    z-index: 15;
+    width: 100%;
+
+    &-li {
+      margin-right: 6rem;
+      background-color: transparent;
+      display: inline-block;
+      padding: 2rem 4rem 2rem 4rem;
+
+      font-weight: 100;
+      letter-spacing: 10px;
+      border-top: transparent;
+      border-right: transparent;
+      border-left: transparent;
+      border-bottom-color: $color-rose-medium;
+      cursor: pointer;
+
+      &:hover {
+        background-color: $color-rose;
+        cursor: pointer;
+      }
+    }
+  }
 
   &-intro {
     display: grid;
-    grid-column-start: 1/2;
-    text-align: center;
     z-index: 10;
 
     &-title {
       display: grid;
       align-items: end;
+      padding-left: 25rem;
+      padding-top: 20rem;
 
       color: $color-turquoise-dark;
-      font-size: 6rem;
-      font-weight: 200;
+      font-size: 7rem;
+      font-weight: 300;
       letter-spacing: 15px;
 
       animation-name: moveInRight;
@@ -52,12 +79,13 @@
     }
 
     &-subtitle {
-      margin-top: 5rem;
-      display:inline;
-      align-items: start;
+      padding-top: 8rem;
+      padding-left: 25rem;
+      padding-bottom: 4rem;
+      display: inline;
 
       color: $color-turquoise-dark;
-      font-size: 2.5rem;
+      font-size: 3rem;
       font-weight: lighter;
       letter-spacing: 10px;
 
@@ -66,14 +94,24 @@
       animation-delay: 1s;
       animation-fill-mode: backwards;
     }
+
+    &-headline {
+      color: $color-rose-dark;
+      padding-top: 2.7rem;
+      font-size: 2rem;
+      letter-spacing: 10px;
+      font-weight: 400;
+      padding-left: 25rem;
+    }
   }
 
   &-icon {
     display: grid;
+    margin-top: 8rem;
     justify-self: center;
     align-self: end;
     width: 4rem;
-    fill: $color-orange-dark;
+    fill: $color-rose-dark;
   }
 
   &-shape {
