@@ -30,29 +30,56 @@
   height: 80vh;
   z-index: 10;
 
-  &-nav {
-    list-style: none;
-    text-align: center;
-    z-index: 15;
-    width: 100%;
+  &-top {
+    //z-index: 15;
+    //display: inline-block;
+    //grid-template-columns: 4fr 1fr;
 
-    &-li {
-      margin-right: 6rem;
-      background-color: transparent;
-      display: inline-block;
-      padding: 2rem 4rem 2rem 4rem;
+    &-nav {
+      grid-column-start: 1/2;
+      list-style: none;
+      text-align: center;
+      z-index: 15;
+      width: 100%;
 
-      font-weight: 100;
-      letter-spacing: 10px;
-      border-top: transparent;
-      border-right: transparent;
-      border-left: transparent;
-      border-bottom-color: $color-rose-medium;
-      cursor: pointer;
+      &-li {
+        margin-right: 6rem;
+        background-color: transparent;
+        display: inline-block;
+        padding: 2rem 4rem 2rem 4rem;
 
-      &:hover {
-        background-color: $color-rose;
+        font-weight: 100;
+        letter-spacing: 8px;
+        border-top: transparent;
+        border-right: transparent;
+        border-left: transparent;
+        border-bottom-color: $color-rose-dark;
         cursor: pointer;
+
+        &:hover {
+          background-color: $color-rose;
+          cursor: pointer;
+        }
+
+        &:focus, &:active {
+          text-decoration: none;
+          outline: none;
+        }
+      }
+      &-location {
+        display: grid;
+        grid-column-start: 2/-1;
+        justify-self: right;
+        margin-top: 0;
+        padding-top: 0;
+        padding-right: 0;
+        margin-right: 0;
+        font-weight: 100;
+      }
+
+      &-icon {
+        fill: $color-turquoise-dark;
+        height: 10px;
       }
     }
   }
@@ -65,11 +92,11 @@
       display: grid;
       align-items: end;
       padding-left: 25rem;
-      padding-top: 20rem;
+      padding-top: 10rem;
 
       color: $color-turquoise-dark;
       font-size: 7rem;
-      font-weight: 300;
+      font-weight: 200;
       letter-spacing: 15px;
 
       animation-name: moveInRight;
@@ -85,14 +112,18 @@
       display: inline;
 
       color: $color-turquoise-dark;
-      font-size: 3rem;
-      font-weight: lighter;
-      letter-spacing: 10px;
+      font-size: 2.7rem;
+      font-weight: normal;
+      letter-spacing: 8px;
 
       animation-name: moveInLeft;
       animation-duration: 3s;
       animation-delay: 1s;
       animation-fill-mode: backwards;
+
+      &-element {
+        font-weight: 100;
+      }
     }
 
     &-headline {
@@ -102,6 +133,7 @@
       letter-spacing: 10px;
       font-weight: 400;
       padding-left: 25rem;
+      text-shadow: .5rem 1rem 2rem rgba(black, .2);
     }
   }
 
@@ -111,7 +143,7 @@
     justify-self: center;
     align-self: end;
     width: 4rem;
-    fill: $color-rose-dark;
+    fill: white;
   }
 
   &-shape {

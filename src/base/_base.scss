@@ -2,18 +2,17 @@
 //COLORS:
 
 $color-beige: rgb(255, 238, 247);
-$color-beige-transparent: rgba(255, 238, 247, 0.86);
+$color-beige-transparent: rgb(255, 238, 247);
 $color-turquoise: #046170;
 $color-turquoise-dark: #064b4d;
 
 $color-rose: rgba(255, 223, 213, 0.86);
 $color-rose-medium: rgba(234, 189, 178, 0.86);
 $color-rose-dark: rgba(216, 154, 145, 0.86);
+$color-rose-darker: rgba(227, 113, 114, 0.86);
 
 $color-orange: rgba(255, 199, 132, 0.83);
 $color-orange-dark: rgb(255, 170, 57);
-
-
 
 *,
 *::before,
@@ -36,3 +35,23 @@ body {
   line-height: 1.3125;
   font-size: 15px;
 }
+
+ul {
+  display: block;
+}
+
+li::before {
+  content: "\2022";
+  display: inline-block;
+  padding: 1rem;
+  color: $color-rose-darker;
+  text-transform: uppercase;
+}
+
+li {
+  display: inline-block;
+  color: $color-turquoise-dark;
+  text-transform: uppercase;
+}
+
+
