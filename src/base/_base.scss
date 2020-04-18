@@ -36,6 +36,27 @@ body {
   font-size: 15px;
 }
 
+.category {
+  display: inline-block;
+  color: $color-rose-dark;
+  border: 1px;
+  border-style: solid;
+  border-bottom-color: $color-rose-dark;
+  text-shadow: .5rem 1rem 2rem rgba($color-rose-dark, .5);
+  padding: 2rem 4rem 2rem 4rem;
+  margin-bottom: 2rem;
+  font-size: 2.5rem;
+  font-weight: 100;
+  letter-spacing: 8px;
+  border-top: transparent;
+  border-right: transparent;
+  border-left: transparent;
+
+  &:hover {
+    background-color: $color-rose;
+  }
+}
+
 ul {
   display: block;
 }
@@ -59,5 +80,6 @@ li {
   --color-stop-1: $color-rose;
   --color-stop-2: $color-orange;
 }
+
 
 

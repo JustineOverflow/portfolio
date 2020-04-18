@@ -1,12 +1,14 @@
 .mywork {
-  height: 90vh;
-  background-image: linear-gradient(to bottom, $color-orange, $color-rose);
+  height: 120vh;
+  padding-top: 5rem;
+  //background-image: linear-gradient(to bottom, $color-orange, $color-rose);
+  background-image: linear-gradient(to bottom, white, $color-rose);
 
   &-title {
     text-align: center;
     text-transform: uppercase;
     text-shadow: .5rem 1rem 2rem rgba(black, .4);
-    color: white;
+    color: $color-turquoise-dark;
     font-size: 2.7rem;
     letter-spacing: 10px;
     font-weight: 400;
@@ -22,9 +24,48 @@
     &-project {
       grid-column-start: auto;
       display: grid;
+      column-gap: 3rem;
+
+      &-category {
+        border-radius: 0.2rem;
+        text-align: center;
+        display: grid;
+        //background-color: transparentize(white, 0.4);
+        color: $color-rose-dark;
+        border: 1px solid;
+        border-top: transparent;
+        border-right: transparent;
+        border-left: transparent;
+        border-bottom-color: $color-rose-dark;
+        text-shadow: .5rem 1rem 2rem rgba($color-rose-dark, .5);
+        padding: 2rem 2rem 2rem 2rem;
+        margin: 3rem 10rem 4.5rem 10rem;
+        font-size: 3rem;
+        font-weight: 100;
+        letter-spacing: 8px;
+
+        &:hover {
+          background-color: $color-rose;
+        }
+      }
 
       &-picture {
-        width: 55rem;
+        width: 50rem;
+        height: 28rem;
+        outline-offset: 1.5rem;
+        justify-self: center;
+        box-shadow: 0 2.5rem 4rem rgba($color-rose-dark, .5);
+
+        &:hover {
+          outline: 1.3rem solid $color-rose-dark;
+          transform: scale(1.05);
+          box-shadow: 0 2.5rem 4rem rgba(black, .5);
+          z-index: 20;
+        }
+      }
+
+      &:hover &_photo:not(:hover) {
+        transform: scale(0.95);
       }
     }
   }
