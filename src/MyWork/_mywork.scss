@@ -1,5 +1,5 @@
 .mywork {
-  height: 120vh;
+  height: 140vh;
   padding-top: 5rem;
   //background-image: linear-gradient(to bottom, $color-orange, $color-rose);
   background-image: linear-gradient(to bottom, white, $color-rose);
@@ -12,9 +12,14 @@
     font-size: 2.7rem;
     letter-spacing: 10px;
     font-weight: 400;
-    margin-right: 50rem;
-    margin-left: 50rem;
-    padding: 3rem;
+    padding-top: 6rem;
+    padding-bottom: 2rem;
+  }
+
+  &-subtitle {
+    text-align: center;
+    color: $color-turquoise;
+    font-style: italic;
   }
 
   &-container {
@@ -37,11 +42,11 @@
         border-right: transparent;
         border-left: transparent;
         border-bottom-color: $color-rose-dark;
-        text-shadow: .5rem 1rem 2rem rgba($color-rose-dark, .5);
+        text-shadow: .5rem 1rem 2rem rgba(black, .4);
         padding: 2rem 2rem 2rem 2rem;
         margin: 3rem 10rem 4.5rem 10rem;
         font-size: 3rem;
-        font-weight: 100;
+        font-weight: 200;
         letter-spacing: 8px;
 
         &:hover {
@@ -50,7 +55,7 @@
       }
 
       &-picture {
-        width: 50rem;
+        max-width: 50rem;
         height: 28rem;
         outline-offset: 1.5rem;
         justify-self: center;

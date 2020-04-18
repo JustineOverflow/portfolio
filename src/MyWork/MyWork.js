@@ -5,6 +5,7 @@ class MyWork extends React.Component {
         return (
             <div className="mywork">
                 <div className="mywork-title">Some of my code</div>
+                <p className="mywork-subtitle">Hover the mouse cursor over the project for more information!</p>
                 <div className="mywork-container">
                     <div className="mywork-container-project">
                         <p className="mywork-container-project-category">Coding quiz</p>

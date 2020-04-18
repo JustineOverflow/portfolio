@@ -1,0 +1,46 @@
+.contact {
+  height: 90vh;
+  background-image: linear-gradient(to bottom, white, $color-rose);
+  text-align: center;
+
+  &-title {
+    text-align: center;
+    text-transform: uppercase;
+    text-shadow: .5rem 1rem 2rem rgba(black, .4);
+    color: $color-turquoise-dark;
+    font-size: 2.7rem;
+    letter-spacing: 10px;
+    font-weight: 400;
+    margin-right: 50rem;
+    margin-left: 50rem;
+    padding: 3rem;
+  }
+
+  &-button {
+    text-align: center;
+    font-weight: lighter;
+    border-radius: 2rem;
+    border-color: $color-rose-dark;
+    letter-spacing: 8px;
+    background-color: white;
+    color: $color-rose-dark;
+    width: 20vw;
+    margin: 3vh 8vh 3vh 8vh;
+    padding: 4vh;
+    box-shadow: 0 15px 30px rgba(0, 0, 0, .2);
+    text-shadow: .5rem 1rem 2rem rgba(black, .4);;
+    font-size: 2.3rem;
+    outline: none;
+    cursor: pointer;
+
+    &:hover {
+      cursor: pointer;
+      background-color: $color-rose-dark;
+      color: white;
+    }
+
+    &:focus {
+      transform: translateY(2.5%);
+    }
+  }
+}
