@@ -52,6 +52,12 @@ li {
   display: inline-block;
   color: $color-turquoise-dark;
   text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+#gradient{
+  --color-stop-1: $color-rose;
+  --color-stop-2: $color-orange;
 }
 
 

@@ -1,6 +1,6 @@
 .about {
   background-color: white;
-  height: 120vh;
+  height: 100vh;
   padding-top: 15rem;
 
   &-title {
@@ -9,7 +9,7 @@
     &-text {
       text-align: center;
       text-transform: uppercase;
-      text-shadow: .5rem 1rem 2rem rgba(black, .2);
+      text-shadow: .5rem 1rem 2rem rgba(black, .4);
       color: $color-turquoise-dark;
       font-size: 2.7rem;
       letter-spacing: 10px;
@@ -17,24 +17,30 @@
       margin-right: 50rem;
       margin-left: 50rem;
       padding: 2rem;
-
     }
+  }
+
+  &-shape {
+    position: absolute;
+    z-index: 1;
+    right: -50px;
   }
 
   &-technologies {
     display: grid;
-    grid-template-row: 1fr 1fr;
     text-align: center;
+    position: relative;
 
     &-frontend, &-backend {
+      z-index: 15;
       display: inline-block;
-      padding: 3rem;
+      padding: 2rem;
       justify-self: center;
-      margin-bottom: 10rem;
+      margin-bottom: 5rem;
       grid-template-rows: 2/-1;
-      background-color: transparentize($color-beige, 0.6);
+      background-color: transparentize(white, 0.6);
       box-shadow: 0 15px 30px rgba(0, 0, 0, .2);
-      border-radius: 5rem;
+      border-radius: 0.2rem;
       width: 70%;
 
       &-category {
@@ -43,13 +49,19 @@
         border: 1px;
         border-style: solid;
         border-bottom-color: $color-rose-dark;
+        text-shadow: .5rem 1rem 2rem rgba($color-rose-dark, .5);
         padding: 2rem 4rem 2rem 4rem;
+        margin-bottom: 2rem;
         font-size: 2.5rem;
         font-weight: 100;
         letter-spacing: 8px;
         border-top: transparent;
         border-right: transparent;
         border-left: transparent;
+
+        &:hover {
+          background-color: $color-rose;
+        }
 
         &-list {
           font-weight: 100;

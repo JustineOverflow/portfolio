@@ -1,4 +1,31 @@
 .mywork {
   height: 90vh;
   background-image: linear-gradient(to bottom, $color-orange, $color-rose);
+
+  &-title {
+    text-align: center;
+    text-transform: uppercase;
+    text-shadow: .5rem 1rem 2rem rgba(black, .4);
+    color: white;
+    font-size: 2.7rem;
+    letter-spacing: 10px;
+    font-weight: 400;
+    margin-right: 50rem;
+    margin-left: 50rem;
+    padding: 3rem;
+  }
+
+  &-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+
+    &-project {
+      grid-column-start: auto;
+      display: grid;
+
+      &-picture {
+        width: 55rem;
+      }
+    }
+  }
 }
