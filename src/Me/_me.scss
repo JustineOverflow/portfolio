@@ -1,5 +1,5 @@
 .me {
-  height: 90vh;
+  height: 100vh;
   background-color: white;
 
   &-title {
@@ -14,7 +14,6 @@
     margin-left: 50rem;
     padding: 3rem;
   }
-
   &-container {
     text-align: center;
     z-index: 15;
@@ -69,7 +68,6 @@
         display: grid;
         grid-template-columns: 1fr 5fr;
       }
-
     }
   }
 
@@ -83,12 +81,9 @@
     text-align: center;
 
     &-p1 {
-      max-width: 20rem;
+      max-width: 15rem;
+      border-radius: 50%;
       z-index: 2;
-    }
-
-    &-p2 {
-      max-width: 30rem;
     }
   }
 }

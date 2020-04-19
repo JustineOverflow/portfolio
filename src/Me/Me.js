@@ -55,12 +55,11 @@ class Me extends React.Component {
                             <i className="me-container-presentation-icon fas fa-code"></i>
                             <div>
                                 <p className="me-container-presentation-title">Coding</p>
-                                <p className="me-container-presentation-text">Coding is also a hobbie, and I like spending time learning new technologies and working on side projects.</p>
+                                <p className="me-container-presentation-text">Coding is also a hobbie, and I like spending time learning new technologies and working on side projects. There is almost no day without some code!</p>
                             </div>
                         </div>
                     </div>
-                    {/*<img className="me-profile-p2" src="/img/coding-table.jpg" alt="profile-picture"/>*/}
-                    {/*<img className="me-profile-p1" src="/img/profile.jpg" alt="profile-picture"/>*/}
+                    <img className="me-profile-p1" src="/img/profile.jpg" alt="profile-picture"/>
                 </div>
             </div>
         )

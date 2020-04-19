@@ -9,19 +9,19 @@ class MyWork extends React.Component {
                 <div className="mywork-container">
                     <div className="mywork-container-project">
                         <p className="mywork-container-project-category">Coding quiz</p>
-                        <img src="/img/coding-quiz.png" alt="coding-quiz" className="mywork-container-project-picture"/>
+                        <a className="mywork-container-project" href="https://github.com/JustineOverflow/coding-quizz-reactjs" target="_blank"><img src="/img/coding-quiz.png" alt="coding-quiz" className="mywork-container-project-picture"/></a>
                     </div>
                     <div className="mywork-container-project">
                         <p className="mywork-container-project-category">Gift app</p>
-                        <img src="/img/giftapp.png" alt="gift-app" className="mywork-container-project-picture"/>
+                        <a className="mywork-container-project" href="https://github.com/JustineOverflow/Gift-list-app" target="_blank"><img src="/img/giftapp.png" alt="gift-app" className="mywork-container-project-picture"/></a>
                     </div>
                     <div className="mywork-container-project">
                         <p className="mywork-container-project-category">Onride</p>
-                        <img src="/img/onride.png" alt="onride.io" className="mywork-container-project-picture"/>
+                        <a className="mywork-container-project" href="https://onride.io/" target="_blank"><img src="/img/onride.png" alt="onride.io" className="mywork-container-project-picture"/></a>
                     </div>
                     <div className="mywork-container-project">
                         <p className="mywork-container-project-category">Hangman</p>
-                        <img src="/img/beginning.png" alt="hangman" className="mywork-container-project-picture"/>
+                        <a className="mywork-container-project" href="https://github.com/JustineOverflow/hangman-game-python" target="_blank"><img src="/img/beginning.png" alt="hangman" className="mywork-container-project-picture"/></a>
                     </div>
                 </div>
             </div>

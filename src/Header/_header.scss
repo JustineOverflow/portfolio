@@ -27,7 +27,7 @@
 
 .header {
   display: grid;
-  height: 80vh;
+  height: 90vh;
   z-index: 10;
 
   &-top {
@@ -51,11 +51,9 @@
         border-right: transparent;
         border-left: transparent;
         border-bottom-color: $color-rose-dark;
-        cursor: pointer;
 
         &:hover {
           background-color: $color-rose;
-          cursor: pointer;
         }
 
         &:focus, &:active {
