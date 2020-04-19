@@ -1,7 +1,6 @@
 .mywork {
-  height: 140vh;
-  padding-top: 5rem;
-  //background-image: linear-gradient(to bottom, $color-orange, $color-rose);
+  height: 180vh;
+  padding-top: 15rem;
   background-image: linear-gradient(to bottom, white, $color-rose);
 
   &-title {
@@ -35,7 +34,6 @@
         border-radius: 0.2rem;
         text-align: center;
         display: grid;
-        //background-color: transparentize(white, 0.4);
         color: $color-rose-dark;
         border: 1px solid;
         border-top: transparent;

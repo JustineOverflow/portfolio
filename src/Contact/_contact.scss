@@ -16,31 +16,71 @@
     padding: 3rem;
   }
 
-  &-button {
-    text-align: center;
-    font-weight: lighter;
-    border-radius: 2rem;
-    border-color: $color-rose-dark;
-    letter-spacing: 8px;
-    background-color: white;
-    color: $color-rose-dark;
-    width: 20vw;
-    margin: 3vh 8vh 3vh 8vh;
-    padding: 4vh;
-    box-shadow: 0 15px 30px rgba(0, 0, 0, .2);
-    text-shadow: .5rem 1rem 2rem rgba(black, .4);;
-    font-size: 2.3rem;
-    outline: none;
-    cursor: pointer;
+  &-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr;
 
-    &:hover {
-      cursor: pointer;
-      background-color: $color-rose-dark;
-      color: white;
-    }
+    &-box {
+      padding-top: 5rem;
 
-    &:focus {
-      transform: translateY(2.5%);
+      &-subtitle {
+        grid-column-start: 1;
+        color: $color-turquoise-dark;
+        text-shadow: .5rem 1rem 2rem rgba(black, .4);
+        font-style: italic;
+        font-size: 1.7rem;
+        font-weight: 100;
+
+        &-button {
+          text-align: center;
+          font-weight: 200;
+          border-radius: 2rem;
+          border-color: $color-rose-dark;
+          letter-spacing: 8px;
+          background-color: $color-rose-dark;
+          color: white;
+          width: 20vw;
+          margin: 3vh 8vh 3vh 8vh;
+          padding: 3vh;
+          box-shadow: 0 15px 30px rgba(0, 0, 0, .2);
+          text-shadow: .5rem 1rem 2rem rgba(black, .4);;
+          font-size: 2.3rem;
+          outline: none;
+          cursor: pointer;
+
+          &:hover {
+            cursor: pointer;
+            background-color: white;
+            color: $color-rose-dark;
+          }
+
+          &:focus {
+            transform: translateY(2.5%);
+            width: 3rem;
+          }
+        }
+      }
     }
   }
+
+  &-icon {
+    margin-top: 10rem;
+    padding: 5rem;
+    color: $color-rose-medium;
+    font-size: 5rem;
+    border: 5px solid;
+    border-top-color: transparent;
+    border-left-color: transparent;
+    border-right-color: transparent;
+    border-bottom-color: white;
+  }
+}
+
+.footer {
+  text-align: center;
+  padding: 4rem;
+  color: $color-turquoise-dark;
+  letter-spacing: 8px;
+  font-weight: 100;
 }

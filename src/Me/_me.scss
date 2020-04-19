@@ -1,6 +1,5 @@
 .me {
   height: 90vh;
-  //background-image: linear-gradient(to bottom, $color-rose, $color-orange);
   background-color: white;
 
   &-title {
@@ -16,24 +15,61 @@
     padding: 3rem;
   }
 
-  &-presentation {
-    //text-align: center;
-    position: absolute;
+  &-container {
+    text-align: center;
     z-index: 15;
-    display: inline-block;
-    padding: 2rem;
-    margin-top: 5rem;
-    grid-template-rows: 2/-1;
-    background-color: transparentize(white, 0.6);
-    box-shadow: 0 15px 30px rgba(0, 0, 0, .2);
-    border-radius: 0.2rem;
 
-    &-title {
-      text-align: center;
-    }
+    &-presentation {
+      display: grid;
+      position: relative;
+      grid-template-columns: repeat(2, 1fr);
+      z-index: 15;
+      margin: 6rem 20rem;
+      padding: 2rem;
+      background-color: transparentize(white, 0.4);
+      box-shadow: 0 15px 30px rgba(0, 0, 0, .2);
+      border-radius: 0.2rem;
 
-    &-text {
-      color: $color-turquoise-dark;
+      &-title {
+        grid-row-start: 1/2;
+        border-radius: 0.2rem;
+        display: grid;
+        color: $color-turquoise-dark;
+        text-shadow: .5rem 1rem 2rem rgba(black, .4);
+        align-items: start;
+        justify-items: start;
+        padding-left: 2rem;
+        margin-bottom: 1rem;
+        font-size: 2.5rem;
+        font-weight: 200;
+        letter-spacing: 8px;
+        grid-column-start: auto;
+      }
+
+      &-text {
+        text-align: left;
+        padding-left: 2rem;
+        color: $color-turquoise-darker;
+        font-size: 1.3rem;
+        margin-bottom: 2rem;
+      }
+
+      &-icon {
+        background-image: linear-gradient(to right, $color-rose, $color-rose-dark);
+        border-radius: 50%;
+        padding: 1.5rem;
+        margin: 1rem;
+        height: min-content;
+        color: white;
+        font-size: 3.5rem;
+        text-align: start;
+      }
+
+      &-music, &-travel, &-coding, &-sport {
+        display: grid;
+        grid-template-columns: 1fr 5fr;
+      }
+
     }
   }
 
@@ -48,8 +84,6 @@
 
     &-p1 {
       max-width: 20rem;
-      //margin-top: 15rem;
-      //margin-left: 110rem;
       z-index: 2;
     }
 
