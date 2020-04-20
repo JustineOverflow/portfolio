@@ -3,6 +3,10 @@
   height: 90vh;
   padding-top: 15rem;
 
+  @include respond(phone) {
+    height: 70vh;
+  }
+
   &-title {
     padding: 3rem;
     text-align: center;

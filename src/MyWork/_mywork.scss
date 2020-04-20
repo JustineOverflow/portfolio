@@ -12,7 +12,7 @@
   }
 
   @include respond(phone) {
-    height: 250vh;
+    height: 210vh;
   }
 
   &-title {
@@ -85,7 +85,7 @@
         box-shadow: 0 2.5rem 4rem rgba($color-rose-dark, .5);
 
         @include respond(tab-port) {
-          max-width: 30rem;
+          max-width: 40rem;
           height: 18rem;
         }
 

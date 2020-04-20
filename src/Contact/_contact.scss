@@ -3,6 +3,10 @@
   background-image: linear-gradient(to bottom, white, $color-rose);
   text-align: center;
 
+  @include respond(phone) {
+    height: 120vh;
+  }
+
   &-title {
     text-align: center;
     text-transform: uppercase;

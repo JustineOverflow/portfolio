@@ -53,7 +53,7 @@ class Me extends React.Component {
                             <i className="me-container-presentation-icon fas fa-code"></i>
                             <div>
                                 <p className="me-container-presentation-title">Coding</p>
-                                <p className="me-container-presentation-text">Coding is also a hobbie, and I like spending time learning new technologies and working on side projects. Almost no day goes without code!</p>
+                                <p className="me-container-presentation-text">Coding is also a hobby, and I like spending time learning new technologies and working on side projects. Almost no day goes without code!</p>
                             </div>
                         </div>
                     </div>
