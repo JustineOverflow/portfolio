@@ -52,6 +52,14 @@
         border-left: transparent;
         border-bottom-color: $color-rose-dark;
 
+        @include respond(phone) {
+          font-size: 1rem;
+          letter-spacing: 0.5rem;
+          text-align: left;
+          margin-right: 0;
+          padding: 2rem;
+        }
+
         &:hover {
           background-color: $color-rose;
         }
@@ -98,6 +106,13 @@
       animation-duration: 3s;
       animation-delay: 1s;
       animation-fill-mode: backwards;
+
+      @include respond(phone) {
+        font-size: 3rem;
+        letter-spacing: 1rem;
+        text-align: left;
+        padding-left: 0.2rem;
+      }
     }
 
     &-subtitle {
@@ -116,6 +131,13 @@
       animation-delay: 1s;
       animation-fill-mode: backwards;
 
+      @include respond(phone) {
+        font-size: 2rem;
+        letter-spacing: 0.5rem;
+        text-align: left;
+        padding-left: 0.2rem;;
+      }
+
       &-element {
         font-weight: 100;
       }
@@ -129,6 +151,13 @@
       font-weight: 400;
       padding-left: 25rem;
       text-shadow: .5rem 1rem 2rem rgba(black, .2);
+
+      @include respond(phone) {
+        font-size: 2rem;
+        letter-spacing: 0.5rem;
+        text-align: left;
+        padding-left: 0.2rem;
+      }
     }
   }
 
