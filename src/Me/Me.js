@@ -32,14 +32,14 @@ class Me extends React.Component {
                             <i className="me-container-presentation-icon fas fa-guitar"></i>
                             <div>
                                 <p className="me-container-presentation-title">Music</p>
-                                <p className="me-container-presentation-text">From the age of 6, I grew up in a music environment. I have learned accordion for 13 years, along with 4 years of trumpet and currently enjoying the guitar in my free time.</p>
+                                <p className="me-container-presentation-text">From the age of 6, I grew up in a music environment. I have learned accordion for 13 years, along with 4 years of trumpet and currently enjoying the guitar during my free time.</p>
                             </div>
                         </div>
                         <div className="me-container-presentation-travel">
                             <i className="me-container-presentation-icon fas fa-globe-europe"></i>
                             <div>
                                 <p className="me-container-presentation-title">International</p>
-                                <p className="me-container-presentation-text">I am currently living in London and originally from France. I love discovering and learning new culture, this is why I also lived one year in Sweden and 10 months in Amsterdam.</p>
+                                <p className="me-container-presentation-text">I am currently living in London and originally from France. I love discovering and learning new cultures, this is why I also lived one year in Sweden and 10 months in Amsterdam.</p>
                             </div>
                         </div>
                         <div className="me-container-presentation-sport">
@@ -55,7 +55,7 @@ class Me extends React.Component {
                             <i className="me-container-presentation-icon fas fa-code"></i>
                             <div>
                                 <p className="me-container-presentation-title">Coding</p>
-                                <p className="me-container-presentation-text">Coding is also a hobbie, and I like spending time learning new technologies and working on side projects. There is almost no day without some code!</p>
+                                <p className="me-container-presentation-text">Coding is also a hobbie, and I like spending time learning new technologies and working on side projects. Almost no day goes without code!</p>
                             </div>
                         </div>
                     </div>
