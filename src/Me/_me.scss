@@ -10,9 +10,11 @@
     font-size: 2.7rem;
     letter-spacing: 10px;
     font-weight: 400;
-    margin-right: 50rem;
-    margin-left: 50rem;
     padding: 3rem;
+
+    @include respond(phone) {
+      font-size: 2rem;
+    }
   }
   &-container {
     text-align: center;
@@ -20,14 +22,19 @@
 
     &-presentation {
       display: grid;
+      justify-self: center;
       position: relative;
       grid-template-columns: repeat(2, 1fr);
       z-index: 15;
-      margin: 6rem 20rem;
+      margin: 6rem;
       padding: 2rem;
       background-color: transparentize(white, 0.4);
       box-shadow: 0 15px 30px rgba(0, 0, 0, .2);
       border-radius: 0.2rem;
+
+      @include respond(phone) {
+        margin: 6rem 0;
+      }
 
       &-title {
         grid-row-start: 1/2;
@@ -43,6 +50,16 @@
         font-weight: 200;
         letter-spacing: 8px;
         grid-column-start: auto;
+
+        @include respond(phone) {
+          font-size: 2rem;
+          letter-spacing: 3px;
+        }
+
+        @include respond(tab-port) {
+          font-size: 2rem;
+          letter-spacing: 5px;
+        }
       }
 
       &-text {
@@ -56,12 +73,16 @@
       &-icon {
         background-image: linear-gradient(to right, $color-rose, $color-rose-dark);
         border-radius: 50%;
-        padding: 1.5rem;
+        padding: 2rem;
         margin: 1rem;
         height: min-content;
         color: white;
-        font-size: 3.5rem;
-        text-align: start;
+        font-size: 4rem;
+        text-align: center;
+
+        @include respond(phone) {
+          font-size: 2rem;
+        }
       }
 
       &-music, &-travel, &-coding, &-sport {
@@ -75,6 +96,14 @@
     margin-top: -10rem;
     position: absolute;
     z-index: 1;
+    width:600px;
+    height:600px;
+
+    @include respond(tab-port) {
+      margin-top: 0;
+      width: 50rem;
+      height:50rem;
+    }
   }
 
   &-profile {

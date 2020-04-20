@@ -10,21 +10,21 @@ class Contact extends React.Component {
                     <div className="contact-container-box">
                         <p className="contact-container-box-subtitle">Get in touch with me:</p>
                         <button className="contact-container-box-subtitle-button">
-                            <i className="fas fa-envelope-open-text"></i>
+                            <i className="contact-container-box-subtitle-button-icon fas fa-envelope-open-text"></i>
                             <a href="mailto:justinefabre84@gmail.com" target="_blank">Email</a>
                         </button>
                     </div>
                     <div className="contact-container-box">
-                        <p className="contact-container-box-subtitle">Get more insights about my background:</p>
+                        <p className="contact-container-box-subtitle">More about my background:</p>
                         <button className="contact-container-box-subtitle-button">
-                            <i className="fab fa-linkedin"></i>
+                            <i className="contact-container-box-subtitle-button-icon fab fa-linkedin"></i>
                             <a href="https://www.linkedin.com/in/justine-fabre-pro/" target="_blank">Linkedlin</a>
                         </button>
                     </div>
                     <div className="contact-container-box">
-                        <p className="contact-container-box-subtitle">Read more code:</p>
+                        <p className="contact-container-box-subtitle">More code:</p>
                         <button className="contact-container-box-subtitle-button">
-                            <i className="fab fa-github-square"></i><a href="https://github.com/JustineOverflow" target="_blank">Github</a>
+                            <i className="contact-container-box-subtitle-button-icon fab fa-github-square"></i><a href="https://github.com/JustineOverflow" target="_blank">Github</a>
 
                         </button>
                     </div>

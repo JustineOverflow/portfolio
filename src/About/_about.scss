@@ -16,6 +16,11 @@
       letter-spacing: 10px;
       font-weight: 400;
       padding: 2rem;
+
+      @include respond(phone) {
+        font-size: 2rem;
+      }
+
     }
   }
 
@@ -23,6 +28,14 @@
     position: absolute;
     z-index: 1;
     right: -50px;
+    width: 600px;
+    height: 600px;
+
+    @include respond(tab-port) {
+     right: 0;
+      width: 50rem;
+      height:50rem;
+    }
   }
 
   &-technologies {
@@ -41,6 +54,11 @@
       box-shadow: 0 15px 30px rgba(0, 0, 0, .2);
       border-radius: 0.2rem;
       width: 70%;
+
+      @include respond(phone) {
+        padding: 0.5rem;
+        font-size: 1rem;
+      }
 
       &-category {
         display: inline-block;

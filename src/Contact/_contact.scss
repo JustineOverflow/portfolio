@@ -11,15 +11,21 @@
     font-size: 2.7rem;
     letter-spacing: 10px;
     font-weight: 400;
-    margin-right: 50rem;
-    margin-left: 50rem;
     padding: 3rem;
+
+    @include respond(phone) {
+      font-size: 2rem;
+    }
   }
 
   &-container {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: 1fr;
+
+    @include respond(phone) {
+      grid-template-columns: 1fr;
+    }
 
     &-box {
       padding-top: 5rem;
@@ -50,6 +56,19 @@
           text-decoration: none;
           cursor: pointer;
 
+          @include respond(tab-port) {
+            font-size: 1.6rem;
+            letter-spacing: 2.5px;
+            margin: 3vh 4vh;
+            padding-right: 2vh;
+            padding-left: 2vh;
+          }
+
+          @include respond(phone) {
+            letter-spacing: 1px;
+            width: 40vw;
+          }
+
           a:visited, a:link, a:active {
             text-decoration: none;
             color: white;
@@ -62,6 +81,9 @@
             cursor: pointer;
             background-color: white;
             color: $color-rose-dark;
+          }
+          &-icon {
+            margin: 0.2rem;
           }
         }
       }

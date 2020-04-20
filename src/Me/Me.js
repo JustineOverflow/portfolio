@@ -6,8 +6,6 @@ class Me extends React.Component {
                 <p className="me-title">About me</p>
                 <svg
                     className="me-shape"
-                    width="600"
-                    height="600"
                     viewBox="0 0 600 600"
                     xmlns="http://www.w3.org/2000/svg"
                 >
